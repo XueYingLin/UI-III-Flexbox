@@ -216,9 +216,10 @@ h5 {
 }
 
 /* Your code starts here! */
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
+/*line up the nav bars and logo in a row*/
+.navbar{
+	display: flex;
+	flex-direction: row;
 }
 
 /* Navigation */
@@ -247,14 +248,17 @@ h5 {
 }
 
 /* Hero section */
-.main-header .caption {
-  display: inline;
+.caption {
+  /*display: inline;*/
+  display: row;
   text-align: center;
+  align-content: center;
 }
 
 .main-header .caption h1 {
   font-size: 75px;
   /*display: inline-block;*/
+  
   padding: 5px;
   margin: 10% 0 2% 10%;
 }
@@ -270,6 +274,19 @@ h5 {
 
 .main-header .header-img {
   margin: -25% 0 8% 70%;
+  
+}
+
+/*display the Feature and About in a row*/
+.container1{
+	display: flex;
+	justify-content: space-around;
+	padding: 2%;
+}
+
+/*size the Featuer and the About column*/
+.content-box1{
+	width: 45%;
 }
 
 /* Content section */
