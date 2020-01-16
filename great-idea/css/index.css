@@ -226,9 +226,9 @@ h5 {
   padding: 10px;
 }
 
-.main-header .navbar ul {
+/*.main-header .navbar ul {
   display: inline-block;
-}
+}*/
 
 .main-header .navbar ul li {
   display: inline;
@@ -254,7 +254,7 @@ h5 {
 
 .main-header .caption h1 {
   font-size: 75px;
-  display: inline-block;
+  /*display: inline-block;*/
   padding: 5px;
   margin: 10% 0 2% 10%;
 }
@@ -275,7 +275,7 @@ h5 {
 /* Content section */
 
 .content-section .content-box-top {
-  display: inline-block;
+  /*display: inline-block;*/
   max-width: 500px;
   margin: 2% 0 2% 8%;
   padding: 20px;
@@ -296,7 +296,7 @@ h5 {
 }
 
 .content-section .content-box-bottom {
-  display: inline-block;
+  /*display: inline-block;*/
   max-width: 300px;
   margin: 2% 0 2% 8%;
   padding: 20px;
