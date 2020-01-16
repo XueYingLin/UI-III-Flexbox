@@ -217,6 +217,9 @@ h5 {
 
 /* Your code starts here! */
 /*line up the nav bars and logo in a row*/
+
+
+
 .navbar{
 	display: flex;
 	flex-direction: row;
@@ -224,7 +227,7 @@ h5 {
 
 /* Navigation */
 .main-header .navbar {
-  padding: 10px;
+  padding: 5px;
 }
 
 /*.main-header .navbar ul {
@@ -278,7 +281,7 @@ h5 {
 }
 
 /*display the Feature and About in a row*/
-.container1{
+.text-container1{
 	display: flex;
 	justify-content: space-around;
 	padding: 2%;
@@ -289,6 +292,7 @@ h5 {
 	width: 45%;
 }
 
+/*display the middle image*/
 .middle-img{
   display: flex;
   align-content: center;
@@ -297,13 +301,18 @@ h5 {
   width: 90%;
 }
 
-.content-section .content-box-top {
+/*.content-section .content-box-top {*/
   /*display: inline-block;*/
-  max-width: 500px;
+ /* max-width: 500px;
   margin: 2% 0 2% 8%;
   padding: 20px;
-}
+}*/
 
+.text-container2{
+	display: flex;
+	justify-content: space-between;
+	
+}
 .content-section .content-box h1 {
   font-size: 30px;
 }
@@ -312,13 +321,29 @@ h5 {
   font-size: 18px;
 }
 
-
-
 .content-section .content-box-bottom {
   /*display: inline-block;*/
   max-width: 300px;
   margin: 2% 0 2% 8%;
   padding: 20px;
+}
+
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+/*divid the address to be 2 lines with <div> in the HTML file*/
+.address{
+	display: flex;
+	flex-direction: column;
+}
+
+/*put exactract space above and bellow the phone number with padding top and botten attributes*/
+.phone {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 /* Footer */
