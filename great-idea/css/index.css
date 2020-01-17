@@ -269,7 +269,7 @@ h5 {
 }
 
 .main-header .caption a {
-  padding: 0 20px 0 20px;
+  /*padding: 0 20px 0 20px;*/
   border: #333 1px solid;
   color: #333;
   text-decoration: none;
@@ -303,12 +303,12 @@ h5 {
   width: 90%;
 }
 
-/*.content-section .content-box-top {*/
+.content-section .content-box-top {
   /*display: inline-block;*/
- /* max-width: 500px;
+  max-width: 500px;
   margin: 2% 0 2% 8%;
   padding: 20px;
-}*/
+}
 
 .text-container2{
 	display: flex;
@@ -323,12 +323,12 @@ h5 {
   font-size: 18px;
 }
 
-.content-section .content-box-bottom {
+/*.content-section .content-box-bottom {*/
   /*display: inline-block;*/
-  max-width: 300px;
+  /*max-width: 300px;
   margin: 2% 2% 2% 5%;
   padding: 20px;
-}
+}*/
 
 .contact-container {
 	display: flex;
