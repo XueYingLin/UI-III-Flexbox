@@ -365,4 +365,38 @@ footer .copyright {
 
 
 /*the codes below is for services webpage*/
+/*to create the margin for the whole page*/
+body {
+	margin: 5%;
+}
+
+/*display the header in  a row*/
+header {
+	display: flex;
+}
+
+.navbar a {
+	padding-right: 30px;
+	padding-top: 15px;/*to make sure the bottom of all the elemnets line up with the logo*/
+	justify-content: flex-start;
+}
+
+.services-header-img {
+	display: flex;
+	width: 100%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.logo {
+	margin-right: 10px; 
+}
+
+hr {
+	margin: 2% 0;
+}
+
+
+
+
 
