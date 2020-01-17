@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -219,22 +219,11 @@ h5 {
 /*line up the nav bars and logo in a row*/
 
 
-
-.navbar{
-	display: flex;
-	flex-direction: row;
-}
-
-/* Navigation */
-.main-header .navbar {
-  padding-top: 20px;
-}
-
 /*.main-header .navbar ul {
   display: inline-block;
 }*/
 
-.main-header .navbar ul li {
+.main-header ul li {
   display: inline;
   padding: 0 10px;
 }
@@ -242,15 +231,32 @@ h5 {
 .main-header .navbar ul li a {
   color: #ccc;
   text-decoration: none;
-  padding: 5px;
   font-size: 20px;
 }
 
-.logo {
-  margin-left: 35%;
+.navbar {
+  display: block;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
 }
 
 
+.logocontainer {
+  align-self: flex-end;
+  flex-grow: 1;
+}
+
+.logo {
+  float: right;
+}
+
+.caption-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
 
 /* Hero section */
 .caption {
@@ -260,10 +266,10 @@ h5 {
   align-content: center;
 }
 
-.main-header .caption h1 {
+.caption h1 {
   font-size: 75px;
   /*display: inline-block;*/
-  
+
   padding: 5px;
   margin: 10% 0 2% 10%;
 }
@@ -277,9 +283,9 @@ h5 {
   font-size: 20px;
 }
 
-.main-header .header-img {
-  margin: -25% 0 8% 70%;
-  
+.header-img {
+  margin-left: 40px;
+
 }
 
 /*display the Feature and About in a row*/
@@ -290,30 +296,31 @@ h5 {
 }
 
 /*size the Featuer and the About column*/
-.content-box1{
-	width: 45%;
+.content-box-top {
+	width: calc(50% - 15px);
+}
+
+.content-box-bottom {
+  width: calc(33% - 15px);
+}
+
+.content-box-bottom, .content-box-top {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 15px;
 }
 
 /*display the middle image*/
 .middle-img{
   display: flex;
   align-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-}
-
-.content-section .content-box-top {
-  /*display: inline-block;*/
-  max-width: 500px;
-  margin: 2% 0 2% 8%;
-  padding: 20px;
+  width: 100%;
 }
 
 .text-container2{
 	display: flex;
 	justify-content: space-between;
-	
+
 }
 .content-section .content-box h1 {
   font-size: 30px;
@@ -330,12 +337,6 @@ h5 {
   padding: 20px;
 }*/
 
-.contact-container {
-	display: flex;
-	flex-direction: column;
-	margin-left: 5%;
-	
-}
 
 /*divid the address to be 2 lines with <div> in the HTML file*/
 .address{
@@ -364,39 +365,101 @@ footer .copyright {
 }
 
 
-/*the codes below is for services webpage*/
 /*to create the margin for the whole page*/
 body {
-	margin: 5%;
-}
-
-/*display the header in  a row*/
-header {
-	display: flex;
+	padding: 30px;
 }
 
 .navbar a {
-	padding-right: 30px;
-	padding-top: 15px;/*to make sure the bottom of all the elemnets line up with the logo*/
+	padding-right: 48px;
 	justify-content: flex-start;
+  color: #707070;
+  text-decoration: none;
+}
+
+.services {
+  padding-bottom: 15px;
 }
 
 .services-header-img {
 	display: flex;
-	width: 100%;
-	padding-top: 3%;
-	padding-bottom: 3%;
+  width: 100%;
+  padding-bottom: 40px;
 }
 
-.logo {
-	margin-right: 10px; 
-}
 
 hr {
-	margin: 2% 0;
+  border: none;
+  height: 1px;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.containers {
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
 }
 
 
+.containers section {
+  width: 49%;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: #F0F0F0;
+}
+
+.button {
+  padding: 10px 30px;
+  font-size: 12px;
+  border: black solid 1px;
+  display: inline-block;
+  background-color: white;
+}
+
+.learn-more {
+  margin-top: 30px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 30px;
+  background-color: white;
+}
+
+.line2 {
+  margin-bottom: 40px;
+  border: solid 1px black;
+}
 
 
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+.facts, .services-info-img {
+  width: 45%;
+}
+
+p {
+  line-height: 1.4;
+}
+
+ul {
+list-style: square inside;
+line-height: 2;
+}
+
+
+.copyright {
+  display: block;
+  text-align: center;
+  padding-top: 40px;
+}
