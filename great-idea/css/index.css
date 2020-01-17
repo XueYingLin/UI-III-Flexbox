@@ -227,7 +227,7 @@ h5 {
 
 /* Navigation */
 .main-header .navbar {
-  padding: 5px;
+  padding-top: 20px;
 }
 
 /*.main-header .navbar ul {
@@ -236,7 +236,7 @@ h5 {
 
 .main-header .navbar ul li {
   display: inline;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .main-header .navbar ul li a {
@@ -249,6 +249,8 @@ h5 {
 .logo {
   margin-left: 35%;
 }
+
+
 
 /* Hero section */
 .caption {
@@ -324,13 +326,14 @@ h5 {
 .content-section .content-box-bottom {
   /*display: inline-block;*/
   max-width: 300px;
-  margin: 2% 0 2% 8%;
+  margin: 2% 2% 2% 5%;
   padding: 20px;
 }
 
 .contact-container {
 	display: flex;
 	flex-direction: column;
+	margin-left: 5%;
 	
 }
 
